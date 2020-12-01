@@ -31,7 +31,7 @@ function botVoice(message) {
     const speech = new SpeechSynthesisUtterance();
     speech.text = "Sorry, I did not understand that.";
 
-    if (message.includes('hola')) {
+    if (message.includes('hello')) {
       speech.text = "Hola, que tal estás?";
     }
 
