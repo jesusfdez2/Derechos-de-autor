@@ -29,7 +29,7 @@ function addBotText(text) {
 
 function botVoice(message) {
     const speech = new SpeechSynthesisUtterance();
-    speech.text = "Sorry, I did not understand that.";
+    speech.text = "Lo siento, no tengo nada sobre esa frase";
 
     if (message.includes('hello')) {
       speech.text = "Hola, que tal estás?";
