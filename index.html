@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<picture> 
-		<img id="Img1"   src="Imge3.jpg" alt="Ejemplo2" width="300" height="200"> 
-	   
-		<img id="Img2" src="Imge.jpg" alt="Ejemplo" width="500" height="300"> 
-	
-	  </picture>
-	  
-	  <style>
-		  @media all and (orientation: landscape){
-			#Img1 {
-				display: none;
-			}
-			
-		  }
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ChatBot</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="container">
+        <a class="voice" href="#">Activate Voice</a>
 
-		  @media all and (orientation:portrait){
-			#Img2 {
-				display: none;
-			}
-}
-	  </style>
-</body>
+        <div class="chat-container">
+            <p class="voice2text">Hola</p>
+        </div>
+
+        <div class="chat-container darker">
+            <p class="voice2text">Bienvenido de nuevo</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
