@@ -40,7 +40,7 @@ function botVoice(message) {
     }
 
     if (message.includes('weather')) {
-      speech.text = "Of course. Where are you currently?";
+      speech.text = "Hola";
     }
 
     if (message.includes('London')) {
