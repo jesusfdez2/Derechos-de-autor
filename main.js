@@ -31,12 +31,12 @@ function botVoice(message) {
     const speech = new SpeechSynthesisUtterance();
     speech.text = "Sorry, I did not understand that.";
 
-    if (message.includes('how are you')) {
-      speech.text = "I am fine, thanks. How are you?";
+    if (message.includes('hola')) {
+      speech.text = "Hola, que tal estás?";
     }
 
-    if (message.includes('fine')) {
-      speech.text = "Nice to hear that. How can I assist you today?";
+    if (message.includes('bien')) {
+      speech.text = "Me alegro mucho!";
     }
 
     if (message.includes('weather')) {
