@@ -31,16 +31,21 @@ function botVoice(message) {
     const speech = new SpeechSynthesisUtterance();
     speech.text = "Lo siento, no tengo nada sobre esa frase";
 
-    if (message.includes('hello')) {
+    if (message.includes('hola')) {
       speech.text = "Hola, que tal estás?";
     }
+
+    if (message.includes('adios')) {
+      speech.text = "Cuidate";
+    }
+
 
     if (message.includes('bien')) {
       speech.text = "Me alegro mucho!";
     }
 
-    if (message.includes('weather')) {
-      speech.text = "Hola";
+    if (message.includes('hermano')) {
+      speech.text = "Onii-chan Daisuki";
     }
 
     if (message.includes('London')) {
