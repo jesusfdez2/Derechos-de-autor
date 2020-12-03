@@ -1,0 +1,345 @@
+
+
+body{
+    background-color: aqua;
+}
+
+
+img{
+    max-width: 300px;
+    
+    height: auto;
+}
+p{
+    
+    font-size: 20px;
+}
+
+
+#chatLog{
+    
+    position: relative;
+    margin-left: 50%;
+    max-height: 300px;
+  overflow-y: visible;
+    overflow-x: hidden;
+}
+
+#userBox{
+   
+    position: relative;
+    margin-left: 50%;
+    width: 300px;
+}
+
+.galeria{
+  background-color: #fff;
+  width: 30rem;
+  border-radius: .3rem;
+  margin-left: 50%;
+  position: relative;
+  margin-top: -100px;
+  max-height: 105px;
+  overflow-y: visible;
+  overflow-x: hidden;
+  display: block;
+}
+.galeriaAN{
+  display: none;
+}
+.android{
+    display: none;
+}
+.tabs{
+    width: 30rem;
+    
+	background: #fff;
+	border-radius: .3rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.tabs input{
+	display: none;
+}
+
+.tabs label{
+	float: 1;
+	text-align: center;
+	line-height: 3.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 30px;
+	transition: background-color .2s ease, box-shadow .2s ease;
+}
+.tabs label:hover{
+	background: #0001;
+}
+
+.tabs input:checked + label{
+	box-shadow: inset 0 -.2rem #ff506f;
+}
+.container{
+	display: flex;
+  overflow: hidden;
+
+}
+
+.contenido{
+	flex: 0 0 30rem;
+	padding: 2.4rem;
+	box-sizing: border-box;
+	transition: transform .5s ease;
+}
+
+.tabs input:nth-of-type(2):checked ~ .container .contenido{
+	transform: translateX(-100%);
+}
+
+.tabs input:nth-of-type(3):checked ~ .container .contenido{
+	transform: translateX(-200%);
+}
+.tabs input:nth-of-type(4):checked ~ .container .contenido{
+	transform: translateX(-300%);
+}
+
+.waifus{
+  position: fixed;
+}
+/* -------------------------------------------------------------------------- */
+/*                                     VOZ                                    */
+/* -------------------------------------------------------------------------- */
+
+#container{
+  margin-top: 10px;
+}
+a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  margin-left: 50%;
+}
+
+a:hover {
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+.chat-container {
+  border: 2px solid #dedede ;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px ;
+  margin-left: 50%;
+  width: 200px;
+  display: flex;
+  position: relative;
+  
+}
+
+.chat-container p {
+  background-color: white;
+  font-family: Helvetica;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #c0ffee;
+}
+
+.darker p {
+  background-color: #c0ffee;
+}
+
+/* Clear floats */
+.chat-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.chat-container img {
+  float: left;
+  max-width: 60px;
+  max-height: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.chat-container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+span { 
+	color: #711; 
+} 
+::-webkit-input-placeholder { 
+	color: #711 
+}
+#main { 
+	position: relative; margin-left: 50%; width: 400px; 
+	border: 0px solid #421; padding: 10px; 
+}
+#main div { 
+	margin: 10px; 
+} 
+#input { 
+	border: 0;  padding: 5px; border: 1px solid #421; 
+}
+
+@media screen and (min-device-width: 100px) and (max-device-width: 900px)    {
+  
+  
+  #main { 
+    margin-left: 0px;
+  }
+  #main div { 
+    margin: 10px; 
+  } 
+  
+  
+  img{
+        width: 80%;
+        margin: 0;
+        margin-left: 0px;
+
+    }
+    p{
+        margin-left: 0px;
+        margin: 0;
+        font-size: 25px;
+    }
+    
+    #chatLog{
+        position: relative;
+        margin-left:0;
+        max-height: 300px;
+      overflow-y: visible;
+        overflow-x: hidden;
+    }
+    
+    #userBox{
+        position: relative;
+        margin-left: 0;
+        width: 300px;
+    }
+    .galeria{
+      display: none;
+    }
+    .galeriaAN{
+      background-color: #fff;
+      width: 30rem;
+      border-radius: .3rem;
+      margin-left: 0;
+      position: relative;
+      margin-top: 0px;
+      max-height: 105px;
+      overflow-y: visible;
+      overflow-x: hidden;
+      display: block;
+    }
+    .chat-container{
+      margin-left: 0;
+    }
+    a{
+      margin-left: 0;
+    }
+
+    
+
+    .waifus{
+      position: relative;
+      
+    }
+
+
+    
+}
+/* -------------------------------------------------------------------------- */
+/*                                    TABS                                    */
+/* -------------------------------------------------------------------------- */
+/*
+.tabs {
+    max-width: 600px;
+    width:100%;
+    height:300px;
+    
+    
+    
+    overflow:hidden;
+  }
+  .tabs .tab-header {
+    float:left;
+    width:180px;
+    height:10px;
+    
+    padding:50px 0px;
+  }
+  .tabs .tab-header > div {
+    height:50px;
+    line-height:50px;
+    font-size:16px;
+    font-weight:600;
+    color:#888;
+    cursor:pointer;
+    padding-left:10px;
+    
+  }
+
+ 
+  .tabs .tab-header > div:hover,
+  .tabs .tab-header > div.active {
+    color:black;
+  }
+  .tabs .tab-header div i {
+    display:inline-block;
+    margin-left:10px;
+    margin-right:5px;
+    
+  }
+  .tabs .tab-content {
+    position:relative;
+    height:100%;
+    overflow:hidden;
+  }
+  
+  .tabs .tab-content > div {
+    position:absolute;
+    text-align:center;
+    padding:40px 20px;
+    top:-1000%;
+    transition:all 500ms ease-in-out;
+  }
+  .tabs .tab-content > div.active {
+    top:0px;
+  }
+  **/
+/* -------------------------------------------------------------------------- */
+/*                                   TABS 2                                   */
+/* -------------------------------------------------------------------------- */
